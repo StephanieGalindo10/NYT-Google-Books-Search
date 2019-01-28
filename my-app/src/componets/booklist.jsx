@@ -1,6 +1,5 @@
 import React from "react";
 import Book from "./book";
-
 const BookList = props => {
   return (
     <div className="row bookList">
