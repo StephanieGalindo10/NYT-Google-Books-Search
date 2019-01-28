@@ -15,6 +15,7 @@ const BookList = props => {
               description={book.book_details[0].description}
               rank={book.rank}
               weeksOnList={book.weeks_on_list}
+             
             />
           </div>
         ))}
