@@ -4,8 +4,8 @@ import Nav from "./components/nav";
 import Header from "./components/header";
 import Form from "./components/form";
 import BookList from "./components/bookList";
-import { Favorites } from './Favorites';
-import { Menu } from './Menu';
+import { Favorites } from './favorites';
+import { Menu } from './menu';
 
 
 class App extends Component {
