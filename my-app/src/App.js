@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "./App.css";
 import Nav from "./components/nav";
 import Header from "./components/header";
-import Form from "./components/form";
+import Form from "./components/forms";
 import BookList from "./components/bookList";
-import { Favorites } from './favorites';
-import { Menu } from './menu';
+import { Favorite } from "./components/favorite";
+import { Menu } from "./components/menu";
 
 
 class App extends Component {
