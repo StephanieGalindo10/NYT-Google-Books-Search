@@ -4,7 +4,8 @@ import { MdStars } from 'react-icons/md/';
 import { MdStar } from 'react-icons/md/';
 import Scroll from 'react-scroll';
 import React from 'react';
-export const Bookrow = ({rowNumber, title, author, rating, highlight}) => {
+import Favorite from './favorite';
+export const bookrow = ({rowNumber, title, author, rating, highlight}) => {
 
 	// Scroll to the top of UI when user selects an entry
 	const click = () => {
@@ -44,7 +45,7 @@ export const Bookrow = ({rowNumber, title, author, rating, highlight}) => {
 	)
 }
 
-Bookrow.propTypes ={
+bookrow.propTypes ={
 	title: PropTypes.string,
 	author: PropTypes.string
 }
