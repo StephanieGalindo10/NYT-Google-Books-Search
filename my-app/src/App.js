@@ -4,7 +4,7 @@ import Nav from "./components/nav";
 import Header from "./components/header";
 import Form from "./components/forms";
 import BookList from "./components/bookList";
-import Bookrow from "./components/bookrow";
+import {Bookrow} from "./components/bookrow";
 import { Favorite } from "./components/favorite";
 import { Menu } from "./components/menu";
 

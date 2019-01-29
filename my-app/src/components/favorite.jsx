@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BookRow } from "./bookrow";
+import {Bookrow}  from "./bookrow";
 export const Favorites = ({data, highlight, visibility}) => {
 
 	if (visibility) {
@@ -8,7 +8,7 @@ export const Favorites = ({data, highlight, visibility}) => {
 			<section id="favorites"
 							 aria-label="List of books added to favorites">
 				{data.map((entry, i) =>
-					<BookRow key = {i}
+					<Bookrow key = {i}
 					         rowNumber = {i}
 					         title = {entry.title}
 					         author = {entry.authors}
