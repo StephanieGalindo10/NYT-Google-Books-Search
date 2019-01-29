@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHome } from 'react-icons/fa/';
 import { MdStar } from 'react-icons/md/';
-import { GoMarkGithub } from 'react-icons/go/';
+import { Github } from 'react-icons/go/';
 export const Menu = ({setVisibility, visibility}) => {
 	
 	const color = { color: '#BDBDBD'};
@@ -34,7 +34,7 @@ export const Menu = ({setVisibility, visibility}) => {
 			<span>{visibility.favorites ?
 				<FaHome onClick={() => showHome()}/> :
 			    <FaHome style={color} /> }</span>
-			<span><a href="https://github.com/kingjeremy2211/NYT-Googlebooks"><GoMarkGithub /></a></span>
+			<span><a href="https://github.com/StephanieGalindo10/NYT-Google-Books-Search"><Github/></a></span>
 		</nav>
 	)
 }

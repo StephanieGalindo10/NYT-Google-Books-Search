@@ -3,7 +3,7 @@ import "./App.css";
 import Nav from "./components/nav";
 import Header from "./components/header";
 import Form from "./components/forms";
-import BookList from "./components/bookList";
+import BookList from "./components/booklist";
 import {Bookrow} from "./components/bookrow";
 import { Favorite } from "./components/favorite";
 import { Menu } from "./components/menu";
@@ -17,7 +17,7 @@ class App extends Component {
 
   
   getBooks = async e => {
-    
+    console.log("getbooks")
     let formSearch = e.target.elements.formSearch.value;
     e.preventDefault();
     e.target.reset();
@@ -31,10 +31,12 @@ class App extends Component {
         formSearch + "&api-key=" + "893ff80ed7b54b818c6dd60f0810fe80"
     );
 
-    const data = await nytApiCall.json();
-
+     await nytApiCall.json().then(data=>{
+       this.setState({ books: data.results })
+      });
     
-    this.setState({ books: data.results });
+    
+    
 
     
     if (formSearch === "hardcover-fiction") {
